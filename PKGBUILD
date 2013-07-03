@@ -1,7 +1,7 @@
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 
 pkgname=libmspack
-pkgver=0.3alpha
+pkgver=0.4alpha
 pkgrel=1
 pkgdesc="A library for Microsoft compression formats"
 arch=('i686' 'x86_64')
@@ -11,7 +11,7 @@ depends=('glibc')
 makedepends=()
 options=('!libtool')
 source=(http://www.cabextract.org.uk/libmspack/$pkgname-$pkgver.tar.gz)
-md5sums=('08d08455b6d58ea649b35febd23f6386')
+md5sums=('1ab10b507259993c74b4c41a88103b59')
 
 build() {
   cd "$srcdir/$pkgname-$pkgver"
