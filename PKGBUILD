@@ -1,7 +1,7 @@
 # Maintainer: AndyRTR <andyrtr@archlinux.org>
 
 pkgname=libmspack
-pkgver=0.4alpha
+pkgver=0.5alpha
 pkgrel=1
 pkgdesc="A library for Microsoft compression formats"
 arch=('i686' 'x86_64')
@@ -10,20 +10,20 @@ license=('GPL')
 depends=('glibc')
 makedepends=()
 source=(http://www.cabextract.org.uk/libmspack/$pkgname-$pkgver.tar.gz)
-md5sums=('1ab10b507259993c74b4c41a88103b59')
+md5sums=('3aa3f6b9ef101463270c085478fda1da')
 
 build() {
-  cd "$srcdir/$pkgname-$pkgver"
+  cd $pkgname-$pkgver
   ./configure --prefix=/usr --disable-static
   make
 }
 
 check() {
-  cd "$srcdir/$pkgname-$pkgver"
+  cd $pkgname-$pkgver
   make check
 }
 
 package() {
-  cd "$srcdir/$pkgname-$pkgver"
+  cd $pkgname-$pkgver
   make DESTDIR="$pkgdir/" install
 }
