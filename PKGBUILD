@@ -2,7 +2,6 @@
 # Contributor: AndyRTR <andyrtr@archlinux.org>
 
 pkgname=libmspack
-_tag='9d29d849d0b272eaf66c1e4811f573492fea035f' # rev-parse tags/v0.11alpha
 epoch=1
 pkgver=0.11alpha
 pkgrel=1
@@ -13,8 +12,8 @@ license=('GPL')
 depends=('glibc')
 makedepends=('git')
 provides=('libmspack.so')
-source=("git+https://github.com/kyz/libmspack#tag=$_tag")
-sha256sums=('SKIP')
+source=("git+https://github.com/kyz/libmspack#tag=tags/v${pkgver}")
+sha256sums=('729d08d273ddc374fb0a72c4ab3630efbd24dc3e5a80a1374dfef05096b15812')
 
 pkgver() {
   cd $pkgname

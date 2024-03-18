@@ -9,7 +9,7 @@ pkgbase = libmspack
 	makedepends = git
 	depends = glibc
 	provides = libmspack.so
-	source = git+https://github.com/kyz/libmspack#tag=9d29d849d0b272eaf66c1e4811f573492fea035f
-	sha256sums = SKIP
+	source = git+https://github.com/kyz/libmspack#tag=tags/v0.11alpha
+	sha256sums = 729d08d273ddc374fb0a72c4ab3630efbd24dc3e5a80a1374dfef05096b15812
 
 pkgname = libmspack
