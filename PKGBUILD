@@ -3,7 +3,7 @@
 
 pkgname=libmspack
 epoch=1
-pkgver=0.11alpha
+pkgver=1.11
 pkgrel=1
 pkgdesc='A library for Microsoft compression formats'
 url='https://www.cabextract.org.uk/libmspack/'
@@ -12,8 +12,8 @@ license=('GPL')
 depends=('glibc')
 makedepends=('git')
 provides=('libmspack.so')
-source=("git+https://github.com/kyz/libmspack#tag=tags/v${pkgver}")
-sha256sums=('729d08d273ddc374fb0a72c4ab3630efbd24dc3e5a80a1374dfef05096b15812')
+source=("git+https://github.com/kyz/libmspack#tag=v${pkgver}")
+sha256sums=('8772ea127d0e09f6ae60e7780634fbf0467e26fa0dc429bc207395b0117c447a')
 
 pkgver() {
   cd $pkgname
