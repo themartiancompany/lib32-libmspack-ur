@@ -30,8 +30,10 @@ _os="$( \
   uname \
     -o)"
 if [[ "${_os}" == "GNU/Linux" ]]; then
+  _compiler_libs="gcc-multilib"
   _libc="glibc"
 elif [[ "${_os}" == "Android" ]]; then
+  _compiler_libs="libcompiler-rt"
   _libc="ndk-sysroot"
 fi
 _git="true"
@@ -52,9 +54,10 @@ license=(
   'GPL'
 )
 depends=(
-  "${_libc}"
+  "${_ml}${_libc}"
 )
 makedepends=(
+  "${_compiler_libs}"
 )
 if [[ "${_git}" == "true" ]]; then
   makedepends+=(
