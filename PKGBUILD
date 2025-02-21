@@ -55,6 +55,7 @@ license=(
 )
 depends=(
   "${_ml}${_libc}"
+  "${_pkg}"
 )
 makedepends=(
   "${_compiler_libs}"
@@ -66,7 +67,6 @@ if [[ "${_git}" == "true" ]]; then
 fi
 provides=(
   'libmspack.so'
-  "${_pkg}=${pkgver}"
 )
 _http="https://github.com"
 _ns="kyz"
