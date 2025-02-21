@@ -161,6 +161,9 @@ package() {
     DESTDIR="${pkgdir}" \
     libdir="${_lib}" \
     install
+  rm \
+    -rf \
+    "${pkgdir}/usr/include"
 }
 
 # vim:set sw=2 sts=-1 et:
