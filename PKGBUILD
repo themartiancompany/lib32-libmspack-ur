@@ -66,7 +66,7 @@ if [[ "${_git}" == "true" ]]; then
   )
 fi
 provides=(
-  'libmspack.so'
+  "${_pkg}.so"
 )
 _http="https://github.com"
 _ns="kyz"
